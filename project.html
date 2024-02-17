@@ -1,0 +1,363 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Car Care</title>
+    <style>
+        body {
+            font-family: 'Arial', sans-serif;
+            margin: 0;
+            padding: 0;
+            position: relative;
+            z-index: 0;
+        }
+
+        header, nav, section, footer {
+            position: relative;
+            z-index: 1;
+        }
+
+        header {
+            background-color: #FFC107;
+            color: #333;
+            text-align: center;
+            margin-left: 300px; 
+            margin-right: 300px;
+            padding: 20px;
+            position: relative;
+            z-index: 1;
+        }
+	 .logo {
+            position: absolute;
+            left: 20px;
+            top: 20px;
+            max-width: 100px; 
+            height: auto;
+        }
+        nav {
+            background-color: #2196F3;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            z-index: 1;
+            margin-left: 300px; 
+            margin-right: 300px; 
+        }
+
+        nav a {
+            color: #fff;
+            margin: 0 10px;
+            text-decoration: none;
+            font-weight: bold;
+            cursor: pointer;
+            transition: color 0.3s;
+        }
+
+        nav a:hover {
+            color: #ffcc00;
+        }
+
+        .main-container {
+            display: flex;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .edge-image-left {
+            position: fixed;
+            width: 300px; 
+            height: auto;
+            left: 0;
+            top: 0;
+        }
+        .edge-image-right {
+            position: fixed;
+            width: 300px; 
+            height: auto;
+            right:0;
+            top: 0;
+        }
+
+        .section-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+
+        section {
+            max-width: 800px;
+            background-color: #ecf0f1;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            border-radius: 5px;
+            position: relative;
+            z-index: 1;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            text-align: center; 
+        }
+
+        h2 {
+            color: #333;
+            border-bottom: 2px solid #FFC107;
+            padding-bottom: 10px;
+            margin-bottom: 15px;
+        }
+
+        p {
+            color: #555;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        table, th, td {
+            border: 1px solid #ddd;
+        }
+
+        th, td {
+            padding: 15px;
+            text-align: left;
+        }
+
+        img {
+            max-width: 100%;
+            height: auto;
+            margin-top: 10px;
+            border-radius: 5px;
+            float: left;
+            margin-right: 20px;
+        }
+
+        footer {
+            background-color: #2196F3;
+            color: #fff;
+            padding: 10px;
+            text-align: center;
+            position: relative;
+            bottom: 0;
+            left: 0;
+            right: 0;
+            z-index: 1;
+            margin-left: 300px;
+            margin-right: 300px; 
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+	<img src="V8.jpg" alt="Logo" class="logo">
+        <h1>Car Care</h1>
+    </header>
+
+    <nav>
+        <a onclick="showArticle('clanek1')">Changing of <span style="color: #FFC107;">Headlight Bulbs</span></a>
+        <a onclick="showArticle('clanek2')">Battery Change</a>
+        <a onclick="showArticle('clanek3')">Fuse Change</a>
+        <a onclick="showArticle('clanek4')">Spark Plugs Change</a>
+    </nav>
+
+    <div class="main-container">
+        <div class="section-container">
+            <section id="clanek1">
+                <h1>Changing of Headlight Bulbs</h1>
+                <p>Headlights are crucial for safe driving, and if one or both of your headlight bulbs have burnt out, it's important to replace them promptly. Follow these steps to change your car's headlight bulbs:</p>
+
+                    <h2>Step 1: Gather Materials</h2>
+                    <p>Before you begin, make sure you have the following:</p>
+                    <ul>
+                        <li>New headlight bulbs (check your car's manual for the correct type)</li>
+                        <li>Screwdriver or socket wrench (if necessary)</li>
+                        <li>Clean cloth or gloves to avoid touching the new bulbs with bare hands</li>
+                    </ul>
+
+                    <h2>Step 2: Locate the Headlight Bulbs</h2>
+                    <p>Identify the location of the headlight bulbs. This information can usually be found in your car's manual. Common locations include under the hood or behind the headlight assembly.</p>
+
+                    <h2>Step 3: Access the Bulbs</h2>
+                    <p>Depending on your car model, you may need to access the bulbs from inside the engine compartment or behind the headlight assembly. Open the hood to access the bulbs.</p>
+
+                    <h2>Step 4: Remove the Old Bulbs</h2>
+                    <p>Unplug the electrical connector from the back of the old bulb. Remove any retaining clips or screws that hold the bulb in place. Carefully take out the old bulb without touching the glass part.</p>
+
+                    <h2>Step 5: Install the New Bulbs</h2>
+                    <p>Take the new headlight bulb and carefully insert it into the headlight socket. Secure it with any retaining clips or screws. Reconnect the electrical connector to the back of the new bulb.</p>
+
+                    <h2>Step 6: Test the Headlights</h2>
+                    <p>Turn on your headlights to ensure that the new bulbs are functioning correctly. If they both light up, you've successfully replaced your headlight bulbs.</p>
+
+                                <p>Learn how to change your car's <span style="color: #4CAF50;">headlight bulbs</span>.</p>
+                                <img src="headlight.jpg" alt="Headlight Bulbs">
+            </section>
+        </div>
+    
+        <div class="edge-image-right">
+            <img src="car1.jpg" alt="Car 1">
+            <img src="car2.jpg" alt="Car 2">
+            <img src="car3.jpg" alt="Car 3">
+            <img src="car4.jpg" alt="Car 4">
+        </div>
+        <div class="edge-image-left">
+            <img src="car1.jpg" alt="Car 1">
+            <img src="car2.jpg" alt="Car 2">
+            <img src="car3.jpg" alt="Car 3">
+            <img src="car4.jpg" alt="Car 4">
+        </div>
+
+        <div class="section-container">
+            <section id="clanek2" style="display: none;">
+                <h1>How to Change a Car Battery</h1>
+
+                <p>If your car's battery is old or not holding a charge, it's time for a replacement. Follow these steps to change your car battery:</p>
+            
+                <h2>Step 1: Gather Materials</h2>
+                <p>Before you begin, make sure you have the following:</p>
+                <ul>
+                    <li>New car battery</li>
+                    <li>Wrench or pliers</li>
+                    <li>Corrosion-resistant grease or petroleum jelly</li>
+                    <li>Clean cloth or gloves</li>
+                </ul>
+            
+                <h2>Step 2: Locate the Car Battery</h2>
+                <p>The car battery is typically located under the hood. Refer to your car's manual to find the exact location. Most batteries are situated near the engine.</p>
+            
+                <h2>Step 3: Disconnect the Negative Terminal</h2>
+                <p>Using a wrench or pliers, loosen and remove the nut from the negative (-) terminal of the battery. This is usually marked with a minus sign and is black.</p>
+            
+                <h2>Step 4: Disconnect the Positive Terminal</h2>
+                <p>Repeat the process for the positive (+) terminal. The positive terminal is usually marked with a plus sign and is red.</p>
+            
+                <h2>Step 5: Remove the Old Battery</h2>
+                <p>Remove any clamps or brackets securing the battery. Carefully lift the old battery out of its compartment. Be cautious, as car batteries can be heavy.</p>
+            
+                <h2>Step 6: Clean the Terminals</h2>
+                <p>Inspect the battery terminals for corrosion. If present, clean the terminals with a mixture of baking soda and water. Apply corrosion-resistant grease or petroleum jelly to prevent future corrosion.</p>
+                <img src="battery.jpg" alt="Car Battery">
+                <h2>Step 7: Install the New Battery</h2>
+                <p>Place the new battery into the compartment. Connect the positive terminal first and then the negative terminal. Tighten the nuts securely.</p>
+            
+                <h2>Step 8: Test the Battery</h2>
+                <p>Turn on your car and check that all electrical systems are functioning properly. If everything is working, you've successfully replaced your car battery.</p>
+            </section>
+        </div>
+
+        <div class="section-container">
+            <section id="clanek3" style="display: none;">
+                <h1>How to Change Car Fuses</h1>
+
+                <p>Fuses play a crucial role in protecting your car's electrical system. If you experience electrical issues, learning how to change fuses is a valuable skill. Follow these steps to change car fuses:</p>
+            
+                <h2>Step 1: Identify the Fuse Box</h2>
+                <p>Locate the fuse box in your car. The fuse box is typically found under the dashboard, near the steering column, or in the engine compartment. Refer to your car's manual for the exact location.</p>
+            
+                <h2>Step 2: Turn Off the Ignition</h2>
+                <p>Before handling fuses, ensure that your car's ignition is turned off to prevent any electrical hazards. Also, disconnect the negative terminal of the car battery for additional safety.</p>
+            
+                <h2>Step 3: Determine the Problem</h2>
+                <p>Identify the specific electrical component that is not working. Check the fuse diagram on the fuse box cover or your car's manual to find the corresponding fuse for the malfunctioning component.</p>
+            
+                <h2>Step 4: Remove the Fuse</h2>
+                <p>Using a fuse puller or a pair of needle-nose pliers, carefully pull out the fuse that corresponds to the faulty component. Be gentle to avoid damaging the fuse or the fuse box.</p>
+            
+                <h2>Step 5: Inspect the Fuse</h2>
+                <p>Examine the fuse for signs of damage. A blown fuse will have a broken or melted filament. If the fuse is intact, the problem may be elsewhere in the electrical system.</p>
+            
+                <h2>Step 6: Replace the Fuse</h2>
+                <p>If the fuse is blown, replace it with a new fuse of the same amperage rating. Refer to the fuse diagram for the correct amperage. Push the new fuse into the appropriate slot until it clicks into place.</p>
+            
+                <h2>Step 7: Test the Component</h2>
+                <p>Turn on the ignition and test the electrical component to ensure it is functioning properly. If the issue persists, consult a professional for further diagnosis.</p>
+            
+                <table>
+                    <thead>
+                        <tr>
+                            <th>Fuse Type</th>
+                            <th>Amperage</th>
+                            <th>Usage</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Main Fuse</td>
+                            <td>30A</td>
+                            <td>Main electrical system</td>
+                        </tr>
+                        <tr>
+                            <td>Headlight Fuse</td>
+                            <td>15A</td>
+                            <td>Headlights</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </section>
+        </div>
+
+        <div class="section-container">
+            <section id="clanek4" style="display: none;">
+                 <h1>How to Change Spark Plugs</h1>
+
+                <p>Regular maintenance of your car's spark plugs is essential for optimal engine performance. Follow these steps to change your car's spark plugs:</p>
+            
+                <h2>Step 1: Gather Materials</h2>
+                <p>Before you begin, make sure you have the following:</p>
+                <ul>
+                    <li>New spark plugs (check your car's manual for the correct type)</li>
+                    <li>Socket wrench</li>
+                    <li>Spark plug socket</li>
+                    <li>Spark plug gap tool</li>
+                    <li>Anti-seize compound (optional)</li>
+                </ul>
+            
+                <h2>Step 2: Locate the Spark Plugs</h2>
+                <p>Refer to your car's manual to locate the spark plugs. They are typically found on the top or sides of the engine, connected to thick wires or ignition coils.</p>
+            
+                <h2>Step 3: Remove the Old Spark Plugs</h2>
+                <p>Using a socket wrench and spark plug socket, carefully remove the old spark plugs one at a time. Turn them counterclockwise to loosen and then remove them by hand.</p>
+            
+                <h2>Step 4: Check the Spark Plug Gap</h2>
+                <p>Use a spark plug gap tool to check the gap of the new spark plugs. Adjust the gap if necessary according to your car's specifications.</p>
+            
+                <h2>Step 5: Install the New Spark Plugs</h2>
+                <p>Apply a small amount of anti-seize compound to the threads of the new spark plugs (if recommended by the manufacturer). Insert the new spark plugs into the spark plug socket and carefully thread them into the engine by hand. Use the socket wrench to tighten them, but avoid over-tightening.</p>
+            
+                <h2>Step 6: Reconnect Wires or Coils</h2>
+                <p>Reconnect the ignition wires or ignition coils to the new spark plugs. Make sure they are securely attached.</p>
+            
+                <img src="sparkplugs.jpg" alt="Changing spark plugs">
+            
+                <h2>Step 7: Test the Engine</h2>
+                <p>Start your car and listen for smooth engine operation. If everything sounds normal, you've successfully changed the spark plugs.</p>
+            
+            </section>
+        </div>
+    </div>
+
+    <footer>
+        &copy; 2024 Zdeněk Paciorek
+    </footer>
+
+    <script>
+        function showArticle(articleId) {
+            var articles = document.querySelectorAll('section');
+            articles.forEach(function (article) {
+                article.style.display = 'none';
+            });
+
+            var selectedArticle = document.getElementById(articleId);
+            if (selectedArticle) {
+                selectedArticle.style.display = 'block';
+            }
+        }
+    </script>
+
+</body>
+</html>
